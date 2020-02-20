@@ -263,7 +263,7 @@ class TaskEngine(object):
                 name=workload["name"],
                 pos=workload["position"],
                 config=json.dumps(objects.Workload.to_task(workload)),
-                reason=e.format_message()) from None
+                reason=e.format_message())
 
         scenario_context = copy.deepcopy(scenario_cls.get_default_context())
         results = []
